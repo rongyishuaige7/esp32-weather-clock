@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32 天气时钟源码推导接线边界图</title>
+  <desc id="desc">ESP32 以 GPIO4 连接 DHT22，以 GPIO21 和 GPIO22 连接 OLED、BH1750 和 DS3231 的 I2C 总线。图不是实物接线、PCB 或电气验证。</desc>
+  <style>
+    text{font-family:system-ui,-apple-system,sans-serif;fill:#1f2937}.box{fill:#fff;stroke:#334155;stroke-width:2}.core{fill:#e0f2fe;stroke:#0369a1;stroke-width:3}.bus{stroke:#0f766e;stroke-width:4;fill:none}.gpio{stroke:#7c3aed;stroke-width:4;fill:none}.note{font-size:15px;fill:#475569}.label{font-size:19px;font-weight:700}.pin{font-size:16px;font-family:ui-monospace,monospace}
+  </style>
+  <rect width="1000" height="560" fill="#f8fafc"/>
+  <text x="40" y="45" class="label">ESP32 天气时钟：源码推导接口边界图</text>
+  <text x="40" y="72" class="note">不是原理图、PCB、实测接线或电气认证；所有模块电压、共地和实际地址需按实物确认。</text>
+  <rect x="385" y="200" width="230" height="150" rx="14" class="core"/>
+  <text x="455" y="255" class="label">ESP32</text><text x="425" y="286" class="pin">GPIO4 · DHT22</text><text x="405" y="314" class="pin">GPIO21 SDA · GPIO22 SCL</text>
+  <rect x="70" y="220" width="200" height="100" rx="12" class="box"/><text x="125" y="265" class="label">DHT22</text><text x="93" y="293" class="pin">DATA → GPIO4</text>
+  <path d="M270 270 H385" class="gpio"/><text x="285" y="252" class="pin">GPIO4</text>
+  <path d="M500 350 V430 H820" class="bus"/><path d="M535 350 V400 H820" class="bus"/>
+  <text x="625" y="388" class="pin">GPIO21 / SDA</text><text x="625" y="423" class="pin">GPIO22 / SCL</text>
+  <rect x="760" y="135" width="180" height="90" rx="12" class="box"/><text x="792" y="177" class="label">SSD1306 OLED</text><text x="793" y="203" class="pin">0x3C · I2C</text>
+  <rect x="760" y="260" width="180" height="90" rx="12" class="box"/><text x="815" y="302" class="label">BH1750</text><text x="793" y="328" class="pin">0x23 · I2C</text>
+  <rect x="760" y="385" width="180" height="90" rx="12" class="box"/><text x="813" y="427" class="label">DS3231 RTC</text><text x="793" y="453" class="pin">0x68 · I2C</text>
+  <path d="M820 225 V400" class="bus"/><path d="M850 350 V430" class="bus"/>
+  <text x="40" y="515" class="note">电源：模块供电、电平、共地、I2C 上拉和线长未由本图确认。不要把 5 V 信号直接接入 ESP32 GPIO。</text>
+</svg>

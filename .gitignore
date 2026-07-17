@@ -1,0 +1,23 @@
+# 本地凭据与运行时配置
+firmware/include/weather_clock_config.h
+.env
+.env.*
+*.local
+
+# PlatformIO / Arduino / IDE 生成物
+.pio/
+.vscode/
+.idea/
+*.code-workspace
+*.ino.cpp
+*.elf
+*.bin
+*.map
+*.hex
+
+# 操作系统与 Python
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
