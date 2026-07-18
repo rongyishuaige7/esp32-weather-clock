@@ -29,3 +29,9 @@ ESP32 固件已在当前候选内容的隔离门禁构建通过；最终发布 C
 - OLED 初始化失败或 RTC 初始化失败时，当前源码会停止；RTC 失电时会写入固定默认时间；
 - 先前原始源码探测 Flash 占用约 79.2%，公开候选应重新构建确认；
 - 在日期化、精确 commit 绑定的真机复测前，不得宣称“设备在线”“天气准确”“传感器已验证”“稳定运行”“安全连接”或“生产就绪”。
+
+## Historical media and EDA added on 2026-07-18
+
+sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+
+This publication update adds historical evidence only. Current hardware re-test not run.

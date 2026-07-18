@@ -1,0 +1,6 @@
+name,designator,footprint,quantity,part_number,manufacturer
+DS3231模块,H1,DS3231接口,1,2.54-1*6P母,BOOMELE(博穆精密)
+0.96OLED_4P_MODULE_JX,OLED1,0.96OLED_4P,1,0.96OLED_4P_MODULE_JX,null
+三线DHT22,S1,DHT11,1,DHT11,EasyEDA
+ESP32-DevKitC,U1,ESP32-DEVKIT-C,1,ESP32-WROOM-32,Espressif Systems
+BH1750模块,U2,BH1750模块,1,,
