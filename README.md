@@ -4,13 +4,13 @@
 
 它演示一条小型嵌入式原型链路：读取本地温湿度、光照和 RTC；在有网络和用户自备凭据时请求天气数据；将当前源码中的字段绘制到 OLED。它不是气象服务、计量仪表、网络安全产品或可直接长期部署的成品。
 
-## Historical material evidence (2026-07-18 publication)
+## 历史素材证据（2026-07-18 发布）
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
-![Historical ESP32 weather-clock prototype, 2026-03-28](assets/photos/historical-prototype.jpg)
+![历史 ESP32 天气时钟原型，2026-03-28](assets/photos/historical-prototype.jpg)
 
-Historical media/EDA do not prove that the current public commit was flashed or re-tested on hardware. **Current hardware re-test not run.**
+历史照片、截图或 EDA 不证明当前公开提交已烧录或完成真机复测。**当前未进行真机复测。**
 
 
 ## 当前状态与证据边界

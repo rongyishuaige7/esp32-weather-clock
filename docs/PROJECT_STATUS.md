@@ -30,8 +30,8 @@ ESP32 固件已在当前候选内容的隔离门禁构建通过；最终发布 C
 - 先前原始源码探测 Flash 占用约 79.2%，公开候选应重新构建确认；
 - 在日期化、精确 commit 绑定的真机复测前，不得宣称“设备在线”“天气准确”“传感器已验证”“稳定运行”“安全连接”或“生产就绪”。
 
-## Historical media and EDA added on 2026-07-18
+## 2026-07-18 新增的历史素材与 EDA
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md)。
 
-This publication update adds historical evidence only. Current hardware re-test not run.
+本次发布仅新增历史证据。当前未进行真机复测。
