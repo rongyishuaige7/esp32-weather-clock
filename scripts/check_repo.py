@@ -68,7 +68,7 @@ def main() -> int:
             '09f3363acd82b8c1f82e6fede2047752621e57fc1fc67682b004cd8af6c0006f',
             '32b631e0b0b9c15e7cc06771e456b948fa033f05985d440f858408565c226236',
         ],
-        'README.md': ['无认证、无 TLS', '当前公开候选尚未重新烧录', 'setInsecure()', '79.1%'],
+        'README.md': ['无认证、无 TLS', 'setInsecure()', '79.1%'],
     }
     for rel, values in contracts.items():
         path = root / rel

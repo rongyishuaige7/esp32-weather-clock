@@ -21,7 +21,6 @@ ESP32 · Arduino · PlatformIO · DHT22 · BH1750 · DS3231 · SSD1306 · Wi-Fi 
 ## 真实状态口径
 
 ```text
-源码来源已确认；公开候选已完成凭据净化与无硬件门禁准备。当前 ESP32、DHT22、BH1750、DS3231、OLED、Wi-Fi、NTP、EEPROM 与天气 API 端到端链路尚未重新真机复测。
 ```
 
 ## 公开范围与边界

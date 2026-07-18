@@ -10,20 +10,6 @@
 
 ![ESP32 天气时钟原型，2026-03-28](assets/photos/historical-prototype.jpg)
 
-
-
-## 当前状态与证据边界
-
-| 层级 | 当前事实 |
-| :-- | :-- |
-| 源码来源 | 桌面原工程与ZIP 的 4 个有效文件逐文件比对一致；原工程和 ZIP 均保持只读。 |
-| 公开净化 | 已移除原始 API Key 与固定 AP 密码；公开候选不提交 `weather_clock_config.h`，并禁止凭据回显和敏感串口日志。 |
-| 固件构建 | 已验证。2026-07-17 的隔离一键门禁在当前候选内容上通过；PlatformIO 结果见下一行。 |
-| 当前真机复测 | **未执行。** 当前公开候选尚未重新烧录、配网或联调 ESP32、DHT22、BH1750、DS3231、OLED、Wi-Fi、NTP、EEPROM 与天气 API。 |
-| 实物与 EDA | 当前未公开实物照片、演示视频、原理图、PCB、Gerber 或制造文件。 |
-
-因此，本仓库只适合作为**源码阅读、构建和受控复现**的参考。构建成功不证明传感器准确、天气数据可用、时间正确、设备联网、安全或长期稳定。
-
 ## 源码功能范围
 
 ```text
@@ -105,20 +91,6 @@ bash scripts/verify.sh
 
 脚本会将当前候选导出到临时目录，运行敏感信息/仓库结构检查、无硬件源码契约测试和 PlatformIO 构建；不会修改权威来源，不会烧录设备、连接真实 Wi-Fi、调用真实天气 API、写入真实凭据或证明真机行为。
 
-## 真机复测前必须完成
-
-请按 [docs/VERIFICATION.md](docs/VERIFICATION.md) 记录日期、完整 Git commit、精确板型和每项通过/失败/未测。其中至少包括：
-
-1. ESP32 板型、供电、Flash、USB 芯片及当前提交烧录；
-2. DHT22、BH1750、DS3231、OLED 的实际型号、电压、共地、I2C 地址和初始化/错误路径；
-3. 无保存凭据时的开放 AP、`http://192.168.4.1/`、Wi-Fi 扫描、配置保存和重启；
-4. STA、断网重连、NTP 成功/失败、RTC 失电和显示刷新；
-5. 受控测试天气 API 请求、`setInsecure()` 风险、错误响应、gzip 与 JSON 解析；
-6. 30–60 分钟稳定性、Flash 空间、内存、传感器偏差与显示结果；
-7. 实物媒体与日志的密钥、SSID、密码、私网、设备标识、EXIF/GPS 脱敏。
-
-完成可审计复测前，不要宣称“设备在线”“天气准确”“传感器已验证”“稳定运行”“安全连接”或“生产就绪”。
-
 ## 许可证、第三方与学习使用
 
 - Rongyi 原创的固件、文档和源码推导图以 [MIT License](LICENSE) 公开；
@@ -128,7 +100,7 @@ bash scripts/verify.sh
 
 ## 更多资料
 
-- [项目状态](docs/PROJECT_STATUS.md)
+-
 - [来源与权威副本裁决](docs/SOURCE_PROVENANCE.md)
 - [配网与协议说明](docs/PROTOCOL.md)
 - [验证说明](docs/VERIFICATION.md)
